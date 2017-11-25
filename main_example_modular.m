@@ -1,6 +1,10 @@
-% main function for TEDIE
-% @author Yuezhe Li
-% @contact yuezheli@gmail.com
+% @author Tiffany Jann
+% @date August 17, 2017
+% @adapted from main_example.m
+% @contact jann.tiffany@gmail.com
+
+%%% THIS SCRIPT IS ADAPTED FROM MAIN_EVAL_ALL TO UTILIZE MODULAR FUNCTIONS
+
 clc,clear
 format short
 
@@ -44,46 +48,21 @@ catch
 end
 clear vn DiscMethodChoice;
 
-%%%%% DATA NORMALIZATION %%%%%
-nouveau = ( test_data - ones(size(test_data)) * min(min(test_data)) ) / (max(max(test_data)) - min(min(test_data)));
-clear test_data;
-test_data = nouveau;
-clear nouveau;
+test_data = normalize_t(test_data);
+% %%%%% DATA NORMALIZATION %%%%%
+% nouveau = ( test_data - ones(size(test_data)) * min(min(test_data)) ) / (max(max(test_data)) - min(min(test_data)));
+% clear test_data;
+% test_data = nouveau;
+% clear nouveau;
 
 %%%%% COMPUTATIONS %%%%%
-
-%%% qualification %%%
-len = length(original);
-rocile = zeros(len,1); % preallocating space to save computation resources
-try
-    for i = 1:len
-    res = original(i,:) - test_data(i,:);
-    rocile(i,1) = signtest(sort(res));
-    clear res;
-    end
-catch
-    disp('an error occured. likely, your .mat file is missing the original dataset matrix');
-end
-
-zygote(1) = quantile(rocile, 0.25);
-clear i rocile len;
-if zygote < 0.01
-    disp('stop here! qualification failed. choose another discretization method!');
+val = qualification_t(original, test_data, num_time_series, num_nodes);
+if strcmp(val, "failed qualification") == 1
+    disp("stop here! qualification failed. choose another discretization method!");
 else
-    disp('qualification passed! move onto evaluation')
-
-    %%% evaluation %%%
-    roche = zeros(num_time_series,1); % preallocating space to save computation resources
-    for i = 1:num_time_series
-        startt = (i-1)*num_nodes+1;
-        endd = i*num_nodes;
-        roche(i,1) = benchmark(original(startt:endd,:)', test_data(startt:endd,:)' );
-        clear startt endd;
-    end
-    zygote(2) = sum(roche)/num_time_series;
-    clear i roche;
-    disp('mean area between the curve: ')
-    disp(zygote(2))
+    disp("qualification passed! move onto evaluation");
+    disp("mean area between the curve: ");
+    disp(val);
 end
 
 clear test_data zygote num_time_series num_nodes;

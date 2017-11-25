@@ -1,6 +1,6 @@
 function f = prebenchmark(x1,y1,x2,y2,x3,y3,x4,y4)
 %% this is written by Yuezhe Li at Oct. 16, 2016
-% this is a benchmark dirretization eavluation proposed by Tiffiny Jann as a REU student
+% this is a benchmark dirretization eavluation proposed by Tiffany Jann as a REU student
 % this is intend to calculate area between two lines
 % line1 = (x1, y1) -- (x2,y2)
 % line2 = (x3, y3) -- (x4, y4)
