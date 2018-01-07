@@ -1,0 +1,102 @@
+###-------------------------------------------------
+### Search component specifications
+###-------------------------------------------------
+
+searcherChoice =                           SimAnneal  
+proposerChoice =                     RandomLocalMove
+evaluatorChoice =                            default
+deciderChoice =                              default
+
+###-------------------------------------------------
+### Input and output locations
+###-------------------------------------------------
+
+inputDirectory =                   MYDATA/steady-off
+observationsFile =                         gallo.txt
+outputDirectory =                  MYDATA/steady-off
+reportFile =                        report.gallo.txt
+
+###-------------------------------------------------
+### We require this only to validate the input
+###-------------------------------------------------
+
+variableCount =                                   5
+
+###-------------------------------------------------
+### Pre-processing options
+###-------------------------------------------------
+
+discretizationPolicy =                          none  
+discretizationExceptions =  
+createDiscretizationReport =                      no
+
+###-------------------------------------------------
+### Network structure properties
+###-------------------------------------------------
+
+minMarkovLag =                                     0
+maxMarkovLag =                                     0
+dbnMandatoryIdentityLags =                         
+equivalentSampleSize =                           1.0
+maxParentCount =                                   3
+defaultMaxParentCount =                            10
+
+###-------------------------------------------------
+### Stopping criteria
+###-------------------------------------------------
+
+maxTime =                                       60 m
+maxProposedNetworks =                    
+maxRestarts =                                  10000
+minNetworksBeforeChecking =                     1000
+
+###-------------------------------------------------
+### Search monitoring properties
+###-------------------------------------------------
+
+nBestNetworks =                                    1
+bestNetworksAre =             
+screenReportingInterval =                        5 m
+fileReportingInterval =                         20 m
+
+###-------------------------------------------------
+### Parameters used by specific search methods
+###-------------------------------------------------
+
+### For simulated annealing:
+initialTemperature =                           10000
+coolingFactor =                                  0.7
+reannealingTemperature =                         800
+maxAcceptedNetworksBeforeCooling =              2500
+maxProposedNetworksBeforeCooling =             10000
+minAcceptedNetworksBeforeReannealing =           500
+
+### For greedy:
+minProposedNetworksAfterHighScore =             1000
+minProposedNetworksBeforeRestart =              3000
+maxProposedNetworksBeforeRestart =              5000
+restartWithRandomNetwork =                       yes
+maxParentCountForRestart =                         3
+
+###-------------------------------------------------
+### Command line user interface options
+###-------------------------------------------------
+
+askToVerifySettings =                             no
+
+###-------------------------------------------------
+###-------------------------------------------------
+### Memory management and performance options
+###-------------------------------------------------
+
+precomputeLogGamma =                             yes
+useCache =                                fastLevel2
+cycleCheckingMethod =                            dfs  
+
+###-------------------------------------------------
+### Misc. options
+###-------------------------------------------------
+
+displayMemoryInfo =                              yes 
+displayStructures =                              yes
+computeInfluenceScores =                         yes

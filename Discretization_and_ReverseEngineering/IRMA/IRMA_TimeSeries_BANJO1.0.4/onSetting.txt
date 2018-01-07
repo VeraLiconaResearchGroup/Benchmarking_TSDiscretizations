@@ -1,0 +1,101 @@
+
+###-------------------------------------------------
+### Project information
+###-------------------------------------------------
+
+project = banjo dynamic example
+user =  Yuezhe Li
+dataset = IRMA
+notes = dynamic bayesian network inference
+
+###-------------------------------------------------
+### Search component specifications
+###-------------------------------------------------
+
+searcherChoice = SimAnneal
+proposerChoice = RandomLocalMove
+evaluatorChoice = default
+deciderChoice = default
+
+###-------------------------------------------------
+### Input and output locations
+###-------------------------------------------------
+
+inputDirectory =                    on_data
+observationsFile =                  bikmeans5.txt
+outputDirectory =                   ./
+reportFile =                        bikmeans5_on.txt
+
+
+###-------------------------------------------------
+### We require this only to validate the input
+###-------------------------------------------------
+
+variableCount = 5
+
+###-------------------------------------------------
+### Pre-processing options
+###-------------------------------------------------
+
+discretizationPolicy = none
+discretizationExceptions =  
+
+###-------------------------------------------------
+### Network structure properties
+###-------------------------------------------------
+
+minMarkovLag = 1
+maxMarkovLag = 1
+dbnMandatoryIdentityLags = 1  
+equivalentSampleSize = 1.0
+maxParentCount = 4
+
+###-------------------------------------------------
+### Network structure properties, optional
+###-------------------------------------------------
+
+initialStructureFile = 
+mustBePresentEdgesFile = 
+mustNotBePresentEdgesFile = 
+
+###-------------------------------------------------
+### Stopping criteria
+###-------------------------------------------------
+
+maxTime = 300
+maxProposedNetworks =
+maxRestarts = 
+minNetworksBeforeChecking = 1000
+
+###-------------------------------------------------
+### Search monitoring properties
+###-------------------------------------------------
+
+nBestNetworks = 1
+numberOfIntermediateProgressReports = 1
+writeToFileInterval = 0
+
+###-------------------------------------------------
+### Parameters used by specific search methods
+###-------------------------------------------------
+
+### For simulated annealing:
+initialTemperature = 100
+coolingFactor = 0.9
+reannealingTemperature = 100
+maxAcceptedNetworksBeforeCooling = 1000
+maxProposedNetworksBeforeCooling = 10000
+minAcceptedNetworksBeforeReannealing = 20
+
+### For greedy:
+minProposedNetworksAfterHighScore = 1000
+minProposedNetworksBeforeRestart = 3000
+maxProposedNetworksBeforeRestart = 5000
+restartWithRandomNetwork = yes
+maxParentCountForRestart = 3
+
+###-------------------------------------------------
+### Command line user interface options
+###-------------------------------------------------
+
+askToVerifySettings = no

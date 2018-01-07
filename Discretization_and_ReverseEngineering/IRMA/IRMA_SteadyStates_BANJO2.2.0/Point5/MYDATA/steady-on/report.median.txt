@@ -1,0 +1,75 @@
+-----------------------------------------------------------------------------
+- Banjo                        Bayesian Network Inference with Java Objects -
+- Release 2.2.0                                                 15 Apr 2008 -
+- Licensed from Duke University                                             -
+- Copyright (c) 2005-08 by Alexander J. Hartemink                           -
+- All rights reserved                                                       -
+-----------------------------------------------------------------------------
+- Project:                                                                   
+- User:                                                                      
+- Dataset:                                                                   
+- Notes:                                                                     
+-----------------------------------------------------------------------------
+- Settings file:                                                             
+-----------------------------------------------------------------------------
+- Input directory:                                           MYDATA/steady-on
+- Observations file:                                               median.txt
+- Observation count:                                                       15
+- Number of variables:                                                      5
+- Discretization policy:                                                 none
+- Exceptions to the discretization policy:                               none
+-----------------------------------------------------------------------------
+- Initial structure file:                                                    
+- 'Must be present' edges file:                                              
+- 'Must not be present' edges file:                                          
+- Min. Markov lag:                                                          0
+- Max. Markov lag:                                                          0
+- Max. parent count:                                                        3
+- Equivalent sample size for Dirichlet parameter prior:                   1.0
+-----------------------------------------------------------------------------
+- Searcher:                                                 SearcherSimAnneal
+- Proposer:                                           ProposerRandomLocalMove
+- Evaluator:                                        defaulted to EvaluatorBDe
+- Decider:                                     defaulted to DeciderMetropolis
+-----------------------------------------------------------------------------
+- Pre-compute logGamma:                                                   yes
+- Cache:                                                           fastLevel2
+- Cycle checking method:                                   Depth-first Search
+-----------------------------------------------------------------------------
+- Initial temperature:                                                  10000
+- Cooling factor:                                                         0.7
+- Reannealing temperature:                                                800
+- Max. accepted networks before cooling:                                 2500
+- Max. proposed networks before cooling:                                10000
+- Min. accepted networks before reannealing:                              500
+-----------------------------------------------------------------------------
+- Output directory:                                          MYDATA/steady-on
+- Report file:                                              report.median.txt
+- Number of best networks tracked:                                          1
+- Max. time:                                                            1.0 h
+- Max. restarts:                                                        10000
+- Min. networks before checking:                                         1000
+- Screen reporting interval:                                            5.0 m
+- File reporting interval:                                             20.0 m
+-----------------------------------------------------------------------------
+- Compute influence scores:                                               yes
+- Compute consensus graph:                                                 no
+- Create consensus graph as HTML:                                          no
+- Create 'dot' output:                                                     no
+- Location of 'dot':                                             not supplied
+-----------------------------------------------------------------------------
+- XML output directory:                                      MYDATA/steady-on
+- XML Report file:                                                           
+- XML settings to export:                                                    
+- XML parser:                             org.apache.xerces.parsers.SAXParser
+- Banjo XML format version:                                               1.0
+-----------------------------------------------------------------------------
+- Seed for starting search:                                     1480962232395
+-----------------------------------------------------------------------------
+- Number of threads:                                                        1
+-----------------------------------------------------------------------------
+
+Memory info before starting the search: Banjo is using 0 mb of memory
+Prep. time used: 81.0 ms
+Beginning to search: expect a status report every 5.0 m
+

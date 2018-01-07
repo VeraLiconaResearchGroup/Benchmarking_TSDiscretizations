@@ -1,0 +1,272 @@
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    4->0;
+    6->0;
+    7->0;
+    9->0;
+    2->1;
+    5->1;
+    1->2;
+    5->2;
+    6->3;
+    5->4;
+    3->5;
+    3->6;
+    1->7;
+    1->8;
+    2->8;
+    1->9;
+    1->10;
+    2->10;
+    11->10;
+    1->11;
+    2->11;
+    0->12;
+    1->12;
+    2->12;
+    3->12;
+}
+

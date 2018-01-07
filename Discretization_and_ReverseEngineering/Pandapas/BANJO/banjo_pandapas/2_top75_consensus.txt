@@ -1,0 +1,176 @@
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    3->0;
+    7->0;
+    8->0;
+    9->0;
+    0->1;
+    6->1;
+    12->4;
+    3->5;
+    3->6;
+    5->6;
+    6->10;
+    6->11;
+    4->12;
+}
+

@@ -1,0 +1,136 @@
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
+
+digraph abstract { 
+
+label = "Banjo Version 2.2.0\nConsensus graph (based on top 5 networks)\nProject: Pandapas\nUser: Y. LI\nDataset: "; 
+labeljust="l"; 
+
+
+    7->0;
+    8->0;
+    9->0;
+    2->1;
+    2->4;
+    7->4;
+    0->10;
+    0->11;
+}
+
