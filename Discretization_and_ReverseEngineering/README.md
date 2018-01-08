@@ -19,8 +19,5 @@ YeastInSilico:
 computations based on Li, Peng, et al. "Gene regulatory network inference and validation using relative change ratio analysis and time-delayed dynamic Bayesian network." EURASIP Journal on Bioinformatics and Systems Biology 2014.1 (2014): 1.
 Data source is from DREAM 3 challenge, we refer this network as YeastInSilico network. 
 
-/*---------------------
-NOTE THAT ALL THE COMPUTATION FOLDERS THAT ARE TAGGED WITH A DATE ARE COMPUTATIONS DONE AFTERWARDS AND NOT IN THE PAPER!
-ALL THE FILES ARE ORIGINAL COMPUTATION FILES, WHICH ARE MESSY!
-LOOK FOR DESCRIPTION FILES (such as .docx file) THAT YOU ARE INTERESTED IN 
------------------------*/
+
+
