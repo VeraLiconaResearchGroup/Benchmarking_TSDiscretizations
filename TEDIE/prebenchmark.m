@@ -14,7 +14,7 @@ if dif < 0
     m2 = (y4-y3)/(x4-x3);
     b2 = y3 - m2*x3;
     xint = (-1)*(b2 - b1)/(m2-m1);
-    area1 = (y3-y1)*abs(xint-x1)/2; 
+    area1 = abs(y3-y1)*abs(xint-x1)/2; 
     area2 = abs(y4-y2)*abs(xint-x2)/2;
     area = area1 + area2; 
 else if dif > 0 
