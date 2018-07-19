@@ -3,10 +3,13 @@
 import argparse
 import numpy as np
 import glob
+import time
+import logging
+
 from sklearn.preprocessing import MinMaxScaler
 from statsmodels.stats.descriptivestats import sign_test
 
-import logging
+starttime = time.time()
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s  [ %(levelname)-4s ] %(name)-6s  %(message)s')
@@ -44,10 +47,10 @@ def trapezoid(x1,y1,x2,y2,u1,v1,u2,v2):
         m2 = (v2-v1)/(u2-u1)
         b2 = v1 - m2*u1
         xint = (-1)*(b2 - b1)/(m2-m1)
-        area1 = abs(v1-y1)*abs(xint-x1)/2 
+        area1 = abs(v1-y1)*abs(xint-x1)/2
         area2 = abs(v2-y2)*abs(xint-x2)/2
         area = area1 + area2
-    elif dif > 0: 
+    elif dif > 0:
         area = ( abs(diff1) + abs(diff2) ) * abs(x2-x1)/2
     else:
         ydif = max( abs(v2-y2), abs(v1-y1) )
@@ -58,8 +61,8 @@ def trapezoid(x1,y1,x2,y2,u1,v1,u2,v2):
 if __name__ == '__main__':
     ## USAGE:
 
-    # python tedie.py -r example_original_data.tsv -d example_discretized_data/ -w example_results/ -a 0.01 -n false 
-    # python tedie.py -r example_original_data.npy -d example_discretized_data/ -w example_results/ -a 0.01 -n true 
+    # python tedie.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
+    # python tedie.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example__results/ -a 0.01 -n true
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--rawfile", help="load file with original time series data", required=True)
@@ -67,7 +70,7 @@ if __name__ == '__main__':
     parser.add_argument("-w", "--writedirectory", help="directory to write results to (default pwd)", required=False)
     parser.add_argument("-p", "--prefix", help="prefix of discretized data files (optional, default none)", required=False)
     parser.add_argument("-a", "--alpha", help="alpha for sign test (default 0.01)", required=False)
-    parser.add_argument("-n", "--numpy", help="use numpy pickles for data arrays (default True, otherwise expects tsv)", required=False)
+    parser.add_argument("-n", "--numpy", help="use numpy pickles for data arrays (default False, otherwise expects csv)", required=False)
 
     args = parser.parse_args()
 
@@ -75,7 +78,10 @@ if __name__ == '__main__':
     discretizeddirectory = args.discretizeddirectory
     if not discretizeddirectory.endswith('/'):
         discretizeddirectory = discretizeddirectory + '/'
-    writedir = args.writedirectory
+    if args.writedirectory:
+        writedir = args.writedirectory
+    else:
+        writedir = ''
     if args.prefix:
         prefix = args.prefix
     else:
@@ -84,10 +90,10 @@ if __name__ == '__main__':
         alpha = float(args.alpha)
     else:
         alpha = 0.01
-    if args.numpy and (args.numpy.lower() == 'false'):
-        usenp = False
+    if args.numpy and (args.numpy.lower() == 'true'):
+        usenp = True
     else:
-        usenp = True 
+        usenp = False
     if usenp:
         data_original = np.load(rawfile)
     else:
@@ -101,7 +107,7 @@ if __name__ == '__main__':
         for f in glob.glob(discretizeddirectory + prefix + '*.csv'):
             logger.info('loading data from %s', f)
             dict_data_discretized[f] = np.loadtxt(f, delimiter=',')
-    
+
     mabc_values = {}
     for discretization, data_d in dict_data_discretized.items():
         scaler = MinMaxScaler()
@@ -118,7 +124,9 @@ if __name__ == '__main__':
             mabc_values[discretization] = calculate(data_d_s, data_original)
 
     logger.info('mabc values: %s', mabc_values)
+    np.save(writedir + 'mabc_values_trial_' + str(int(starttime)) + '.npy', mabc_values)
     best = min(mabc_values, key=mabc_values.get)
     logger.info('best discretization: %s with mabc = %s', best, mabc_values[best])
 
-
+endtime = time.time()
+logger.info('total script duration: %s seconds', endtime - starttime)
