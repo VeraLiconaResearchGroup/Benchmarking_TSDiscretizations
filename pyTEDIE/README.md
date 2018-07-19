@@ -5,9 +5,9 @@ The procedure ranks discretizations by their TEDIE metric values, and outputs th
 1. Qualification: run sign test
 2. Evaluaton: calculate mean area between the curves (MABC) metric
 
-This script will take in the original time series and any number of candidate discretized time series. It calculates and saves a dictionary of each discretization's MABCs in a numpy file, and prints the best discretization to console.
+This script takes an original time series and any number of candidate discretized time series. It calculates and saves a dictionary of each discretization's MABC in a numpy file, and prints the best discretization to console.
 
-Note: Discretized time series that fail the qualification have MABCs of infinity (and thus will never be the best unless no discretizations qualify).
+Note: Discretized time series that fail qualification have MABCs of infinity (and thus will never be the best, unless no other discretizations qualify).
 
 ## Prereqs and Dependencies
 All open source:
@@ -26,7 +26,7 @@ python tedie.py [options]
 -r rawfile
 -d discretizeddirectory
 ```
-Where `rawfile` is the file with original time series data, and `discretizeddirectory` is the directory with all the discretized time series data.
+Where `rawfile` is the file with original time series data, and `discretizeddirectory` is the directory where all the files with discretized time series data are located.
 
 ## Optional options
 ```
@@ -35,7 +35,7 @@ Where `rawfile` is the file with original time series data, and `discretizeddire
 -a alpha
 -n numpy
 ```
-Where `writedirectory` is the directory to write results to (default current directory), `prefix` is the prefix of discretized data files (default none), `alpha` is the minimum p-value for the sign test during qualification (default 0.01), and `numpy` is the flag to look for files ending with .npy instead of .csv (the default).
+Where `writedirectory` is the directory to write results to (default current directory), `prefix` is the prefix of discretized data files (default none), `alpha` is the minimum p-value for the sign test during qualification (default 0.01), and `numpy` is the flag to use `np.load` for .npy files instead of `np.loadtxt` for .csv files (default False).
 
 ## Quick help
 ```
@@ -45,12 +45,12 @@ python tedie.py -h
 ## Example
 With the included `rawfile` and `discretizeddirectory` in the `example_data` directory,
 
-Using CSV format:
+using CSV format:
 ```
 python tedie.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
 ```
 
-Using numpy format:
+using numpy format:
 ```
 python tedie.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example_results/ -a 0.01 -n true
 ```
