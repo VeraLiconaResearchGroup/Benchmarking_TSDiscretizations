@@ -70,7 +70,7 @@ if __name__ == '__main__':
     parser.add_argument("-w", "--writedirectory", help="directory to write results to (default pwd)", required=False)
     parser.add_argument("-p", "--prefix", help="prefix of discretized data files (optional, default none)", required=False)
     parser.add_argument("-a", "--alpha", help="alpha for sign test (default 0.01)", required=False)
-    parser.add_argument("-n", "--numpy", help="use numpy pickles for data arrays (default False, otherwise expects csv)", required=False)
+    parser.add_argument("-n", "--numpy", help="use numpy pickles for data arrays instead of csv (default False)", required=False)
 
     args = parser.parse_args()
 
