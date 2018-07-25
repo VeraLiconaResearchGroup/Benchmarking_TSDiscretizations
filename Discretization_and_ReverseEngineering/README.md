@@ -1,6 +1,6 @@
 # discretization_and_reverse_engineering
 
-This is the data, source code, and reverse engineering machines utilized in Y. Li's 2016 Fall Rotation project with Dr. Paola Vera-Licona. 
+This repository contains the data, source code, and reverse engineering mehtods utilized in the project "Benchmarking of Time-Series Discretization Methods" with Dr. Vera-Licona. 
 
 CSR: 
 computations based on Saez‐Rodriguez, Julio, et al. "Discrete logic modelling as a means to link protein signalling networks with functional analysis of mammalian signal transduction." Molecular systems biology 5.1 (2009): 331.
