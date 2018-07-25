@@ -1,3 +1,3 @@
-# Benchmarking_TSDiscretizations
-Comparison &amp; Assessment of Time Series Data Discretization on Inference Methods
+# README
+
 In this repository are all the .....
