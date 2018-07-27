@@ -1,4 +1,4 @@
-This is the two-step discretization evaluation (TEDIE) procedure. This procedure is proposed by T. Jann, Y. Li, and Dr. P. Vera-Licona. 
+This is the two-step discretization evaluation (DiscreeTest) procedure. This procedure is proposed by T. Jann, Y. Li, and Dr. P. Vera-Licona. 
 
 TEDIE procedure contains two steps: 
 1. Qualification: run sign test; 
