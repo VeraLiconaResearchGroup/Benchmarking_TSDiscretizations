@@ -4,6 +4,6 @@ In this repository are all the datasets, source code and computations for the pa
 
 
 ## Contents
-- Folder "DiscreeTest" contains all benchmarking computations (MATLAB 2016a),
-- Folder "pyDiscreeTest" has the Python source code of TEDIE, 
+- Folder "TEDIE" contains all benchmarking computations (MATLAB 2016a),
+- Folder "pyTEDIE" has the Python source code of DiscreeTest, 
 - Folder "Discretization_and_ReverseEngineering" for the relevant computations (discretization, reverse engineering, and DiscreeTest) in CSR, IRMA, Pandapas and YeastInSilico networks. 
