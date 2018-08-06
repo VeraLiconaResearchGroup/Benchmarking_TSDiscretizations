@@ -1,7 +1,7 @@
-# TEDIE
-This is the Python script for the Two-step discretization evaluation (TEDIE) procedure proposed by T. Jann, Y. Li, and Dr. P. Vera-Licona.
+# DiscreeTest
+This is the Python script for the two-step discretization evaluation (DiscreeTest) procedure proposed by T. Jann, Y. Li, and Dr. P. Vera-Licona.
 
-The procedure ranks discretizations by their TEDIE metric values, and outputs the best discretization. The TEDIE metric contains two steps:
+The procedure ranks discretizations by their DiscreeTest metric values, and outputs the best discretization. The DiscreeTest metric contains two steps:
 1. Qualification: run sign test
 2. Evaluaton: calculate mean area between the curves (MABC) metric
 
@@ -18,7 +18,7 @@ All open source:
 
 ## Synopsis
 ```
-python tedie.py [options]
+python discreetest.py [options]
 ```
 
 ## Options
@@ -39,7 +39,7 @@ Where `writedirectory` is the directory to write results to (default current dir
 
 ## Quick help
 ```
-python tedie.py -h
+python discreetest.py -h
 ```
 
 ## Example
@@ -47,12 +47,12 @@ With the included `rawfile` and `discretizeddirectory` in the `example_data` dir
 
 using CSV format:
 ```
-python tedie.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
+python discreetest.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
 ```
 
 using numpy format:
 ```
-python tedie.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example_results/ -a 0.01 -n true
+python discreetest.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example_results/ -a 0.01 -n true
 ```
 
 ## GitHub

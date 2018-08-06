@@ -32,7 +32,7 @@ it serves as a part in choosedialog GUI;
 *.mat: 
 data file for example use; 
 
-main_*.m: example files for TEDIE procedure that uses benchmark.m;
+main_*.m: example files for DiscreeTest procedure that uses benchmark.m;
 
 
 ##------- GITHUB ---------##

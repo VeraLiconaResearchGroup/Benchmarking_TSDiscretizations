@@ -1,4 +1,4 @@
-% main function for TEDIE
+% main function for DiscreeTest 
 % @author Yuezhe Li
 % @contact yuezheli@gmail.com
 clc,clear

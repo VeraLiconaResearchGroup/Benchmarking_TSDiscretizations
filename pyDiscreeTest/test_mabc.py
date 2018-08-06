@@ -1,7 +1,7 @@
 import unittest
 import numpy as np
 
-from tedie import calculate, trapezoid
+from discreetest import calculate, trapezoid
 class Tests(unittest.TestCase):
 
     def setUp(self):

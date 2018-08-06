@@ -11,7 +11,7 @@ computations based on Cantone, Irene, et al. "A yeast synthetic network for in v
 Referred as IRMA network in our project. 
 
 Pandapas: 
-a in silico network to validate our two-step discretization evaluation (TEDIE) procedure. Network from Camacho, Diogo, et al. "Comparison of Reverse‐Engineering Methods Using an in Silico Network." Annals of the New York Academy of Sciences 1115.1 (2007): 73-89. Note that the data is newly generated. 
+a in silico network to validate our two-step discretization evaluation (DiscreeTest) procedure. Network from Camacho, Diogo, et al. "Comparison of Reverse‐Engineering Methods Using an in Silico Network." Annals of the New York Academy of Sciences 1115.1 (2007): 73-89. Note that the data is newly generated. 
 Both gold standard and original data are in this folder. 
 
 

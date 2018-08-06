@@ -1,4 +1,4 @@
-# Script to rank each discretization by their TEDIE values
+# Script to rank each discretization by their DiscreeTest values
 
 import argparse
 import numpy as np
@@ -61,8 +61,8 @@ def trapezoid(x1,y1,x2,y2,u1,v1,u2,v2):
 if __name__ == '__main__':
     ## USAGE:
 
-    # python tedie.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
-    # python tedie.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example__results/ -a 0.01 -n true
+    # python discreetest.py -r example_data/original_data.csv -d example_data/discretized_data/ -w example_results/ -a 0.01 -n false
+    # python discreetest.py -r example_data/original_data.npy -d example_data/discretized_data/ -w example__results/ -a 0.01 -n true
 
     parser = argparse.ArgumentParser()
     parser.add_argument("-r", "--rawfile", help="load file with original time series data", required=True)
