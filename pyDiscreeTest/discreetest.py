@@ -13,7 +13,7 @@ starttime = time.time()
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s  [ %(levelname)-4s ] %(name)-6s  %(message)s')
-def calculate(data1, data2):
+def calculateMABC(data1, data2):
     data1 = np.atleast_2d(data1)
     data2 = np.atleast_2d(data2)
     if data1.shape != data2.shape:
@@ -30,11 +30,11 @@ def calculate(data1, data2):
             v1 = data2[datum, field]
             v2 = data2[datum+1, field]
             area += trapezoid(x1,y1,x2,y2,u1,v1,u2,v2)
-    return area
+    return (area/data1.shape[0])
 
 def trapezoid(x1,y1,x2,y2,u1,v1,u2,v2):
     """
-    Calculate area between two lines.
+    calculate area between two lines.
     line1 = (x1, y1) -- (x2,y2)
     line2 = (u1, v1) -- (u2, v2)
     """
@@ -121,7 +121,7 @@ if __name__ == '__main__':
             logger.info('%s failed the sign test, assigning inf mabc', discretization)
             mabc_values[discretization] = float("inf")
         else:
-            mabc_values[discretization] = calculate(data_d_s, data_original)
+            mabc_values[discretization] = calculateMABC(data_d_s, data_original)
 
     logger.info('mabc values: %s', mabc_values)
     np.save(writedir + 'mabc_values_trial_' + str(int(starttime)) + '.npy', mabc_values)
