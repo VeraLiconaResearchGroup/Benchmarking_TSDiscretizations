@@ -1,6 +1,7 @@
 clc,clear
 format short
-alldata = load('pandapas_wt.mat'); 
+alldata = load('noise05.mat'); 
+%alldata = load('pandapas_wt.mat');
 
 %% following section is for writing new data into txt files that can be utilized for BANJO 2.2.0
 % if this feature were needed, then make the two current comment lines runnable
@@ -21,7 +22,7 @@ catch
 end
 
 %% following sections are qualification and evaluation together
-names = {'i2', 'top75', 'top25','mean', 'bikmeans2', 'TDT', 'kmeans2','bikmeans5', 'i4','q2','i5', 'bikmeans4','i3','kmeans5','kmeans4','q5', 'bikmeans3','q4','max25','max50', 'max75', 'kmeans3','q3'};
+names = {'i2', 'top75', 'top25','mean2', 'bikmeans2', 'TDT', 'kmeans2','bikmeans5', 'i4','q2','i5', 'bikmeans4','i3','kmeans5','kmeans4','q5', 'bikmeans3','q4','max25','max50', 'max75', 'kmeans3','q3'};
 
 n = length(names); % number of discretiation we are testing here
 
