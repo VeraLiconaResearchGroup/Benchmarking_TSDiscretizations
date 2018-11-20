@@ -22,7 +22,7 @@ for j = 1:m-2
             nadir = nadir + 1;
         end
     else 
-        if d2(j) == -1
+        if d2(j) == 1
             if d2(j+1) < 0.5
                 zenith = zenith + 1;
             end
