@@ -39,4 +39,6 @@ for j = 1:m-2
     end
 end
 
+
+
 f = [nadir, zenith];
