@@ -11,6 +11,7 @@ for i = 1:m-1
 end
 
 % calculate how many times the "trend" of ts is changed
+% nadir and zenith are points of infection
 nadir = 0; 
 zenith = 0; 
 
@@ -38,7 +39,5 @@ for j = 1:m-2
         end
     end
 end
-
-
 
 f = [nadir, zenith];
