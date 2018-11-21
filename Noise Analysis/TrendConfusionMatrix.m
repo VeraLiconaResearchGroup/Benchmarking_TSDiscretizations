@@ -53,6 +53,7 @@ recall = TP/(TP + FN);
 
 if precision + recall > 0
     f1score = precision * recall / (precision + recall);
+    f2score = 5* precision * recall / (4 *precision + recall);
 else
     f1score = 0;
 end
@@ -61,5 +62,7 @@ specificity = TN/ (FN + TN);
 
 accuracy = (TP+TN)/(TP+TN+FP+FN); 
 
-f = [TP, FN, FP, TN, ppv, sensitivity, specificity, accuracy, f1score];
+
+
+f = [TP, FN, FP, TN, ppv, accuracy, sensitivity, specificity, f1score, f2score];
 
