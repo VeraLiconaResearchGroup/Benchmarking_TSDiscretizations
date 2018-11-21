@@ -43,5 +43,7 @@ end
 ppv = TP/(TP + FP); % positive predicted value
 sensitivity = TP/(TP + FN); 
 
-f = [TP, FN, FP, TN, ppv, sensitivity];
+accuracy = (TP+TN)/(TP+TN+FP+FN);
+
+f = [TP, FN, FP, TN, ppv, sensitivity, accuracy];
 

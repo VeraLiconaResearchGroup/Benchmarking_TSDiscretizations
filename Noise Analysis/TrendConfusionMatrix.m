@@ -59,5 +59,7 @@ end
 
 specificity = TN/ (FN + TN);
 
-f = [TP, FN, FP, TN, ppv, sensitivity, specificity];
+accuracy = (TP+TN)/(TP+TN+FP+FN); 
+
+f = [TP, FN, FP, TN, ppv, sensitivity, specificity, accuracy, f1score];
 
